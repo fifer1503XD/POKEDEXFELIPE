@@ -1,0 +1,31 @@
+.pagination-row{
+  display: flex;
+  justify-content: center;
+  padding: 1em 2em;
+}
+
+.pagination-row > .item{
+  text-align: center;
+  background-color: #82b0ec;
+  cursor: pointer;
+  margin: 2px;
+  width: 2%;
+}
+
+.pagination-row > .item:hover{
+  background-color: #c2c2c2;
+}
+
+.row-card{
+  box-sizing: border-box;
+  width: calc(100%/4);
+  padding:2%;
+ 
+}
+.pokedex-container{
+  display:flex;
+  flex-wrap: wrap;
+background:gainsboromar;
+
+
+}
