@@ -16,7 +16,7 @@ export default class GetTypes extends React.Component {
             img="https://upload.wikimedia.org/wikipedia/commons/5/56/Pok%C3%A9mon_Fire_Type_Icon.svg"
         }
         if(type=='grass'){
-            img="https:upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Pok%C3%A9mon_Grass_Type_Icon.svg/600px-Pok%C3%A9mon_Grass_Type_Icon.svg.png" 
+            img="https://upload.wikimedia.org/wikipedia/commons/f/f6/Pok%C3%A9mon_Grass_Type_Icon.svg" 
         }
         if(type=='poison'){
             img="https://upload.wikimedia.org/wikipedia/commons/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg" 

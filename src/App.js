@@ -99,6 +99,7 @@ export default class App extends React.Component {
                     <Card key={index + 1} name={pokemon.name}
                      img={pokemonImg}  
                      pokemones={this.state.pokemones}
+                     pokeName={this.state.pokemones.name}
                      pokeInfo={this.state.pokeInfo}
                      pokeType={this.state.pokeType} 
                      index={index}/>
