@@ -1,0 +1,15 @@
+<div class="row-card">
+        <div class="column">
+          <div class="card brown darken-2">
+            <div class="card-content white-text">
+              <span class="card-title">{this.props.name}</span>
+              <div><img className="imgPoke" src={this.props.img} alt={this.props.name}/></div>
+              
+              <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">+</i></a>
+              
+              <PokeInfo pokeInfo={this.state.pokeInfo} pokemones={this.props.pokemones}/>
+          </div>
+          
+        </div>
+      </div> 
+      </div> 

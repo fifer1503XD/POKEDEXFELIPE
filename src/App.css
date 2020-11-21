@@ -1,4 +1,5 @@
 .pagination-row{
+  width: 500px;
   display: flex;
   justify-content: center;
   padding: 1em 2em;
@@ -9,23 +10,91 @@
   background-color: #82b0ec;
   cursor: pointer;
   margin: 2px;
-  width: 2%;
+  width: 20%;
+  margin-top: 50px;
+  font-size:2em;
 }
 
 .pagination-row > .item:hover{
-  background-color: #c2c2c2;
+  background-color: #f57e7e;
 }
 
 .row-card{
   box-sizing: border-box;
-  width: calc(100%/4);
-  padding:2%;
+  width: 100%;
+  padding:1%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
+  border-radius: 40px;
  
 }
 .pokedex-container{
   display:flex;
   flex-wrap: wrap;
+  width: 100%;
 background:gainsboromar;
 
 
+}
+.column1{
+  height: 100%;
+  width: 25%;
+}
+.column2{
+  height: 100%;
+  width: 40%;
+}
+.column3{
+  height: 100%;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.textStat{
+  font-size:1.2em;
+  font-weight: 600;
+  
+}
+.imgType{
+  font-size:20px;
+  height: 70px;
+}
+.imgstat{
+  font-size:20px;
+  height: 30px;
+}
+.containerstats{
+  width: 45%;
+  background: rgb(236, 230, 230);
+  margin:1px;
+  margin-left:10px;
+  margin-top:10px;
+  text-align: center;
+  border-radius: 15px;
+
+}
+.containersstats{
+  display: flex;
+  flex-wrap: wrap;
+}
+.black-text{
+  color:black
+}
+.containerTypes{
+  display: flex;
+  flex-wrap: wrap;
+}
+.textName{
+  font-size:3em;
+  font-family: 'Monoton', cursive;
+}
+.titleBasic{
+  font-size:3.2em;
+  font-family: 'Monoton', cursive;
+  width: 100%;
+}
+.cardcolor{
+  background: black
 }
