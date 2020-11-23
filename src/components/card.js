@@ -1,7 +1,8 @@
 import React from 'react';
 import './styles.css'
-import PokeInfo from './searchStats';
-import axios from 'axios';
+
+import Modal from './modal';
+
 
   export default class Card extends React.Component {
     constructor(){
@@ -30,11 +31,16 @@ import axios from 'axios';
               <img className="imgPoke" src={this.props.img} alt={this.props.name}/>
               </div>
               <div class="column3 black-text textStat">
-              <PokeInfo pokeInfo={this.props.pokeInfo} pokemones={this.props.pokemones} pokeType={this.props.pokeType}/>
+              
+              <div> <Modal pokeInfo={this.props.pokeInfo} pokemones={this.props.pokemones} pokeType={this.props.pokeType} /></div>
+              
+              
+          </div>
               </div>
+              
           </div>
           
-        </div>
+        
       
       
     )

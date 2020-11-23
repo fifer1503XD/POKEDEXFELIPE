@@ -4,7 +4,7 @@ function Pagination(props){
     let pages = JSON.parse(JSON.stringify(props.ShowPages));
   
     return (
-        <div className="pagination-row">
+        <div className="pagination-row ">
             {
                 pages.map( (element, index) => {
                     index=pages[index]

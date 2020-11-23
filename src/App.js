@@ -106,7 +106,7 @@ export default class App extends React.Component {
                   )
                 })
               }
-               <div className="pagination row">
+               <div className="pgination">
             <Pagination currentPage={this.state.currentPage} 
             fetchPageFn={this.fetchPage} 
             paginationShow={this.paginationShow} 
