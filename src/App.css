@@ -7,7 +7,7 @@
 
 .pagination-row > .item{
   text-align: center;
-  background-color: #82b0ec;
+  background-color: rgb(234 49 49);;
   cursor: pointer;
   margin: 2px;
   width: 20%;
@@ -20,6 +20,7 @@
 }
 
 .row-card{
+  margin-left: 30px;
   box-sizing: border-box;
   width: 100%;
   padding:1%;
@@ -38,8 +39,10 @@ background:gainsboromar;
 
 }
 .column1{
-  height: 100%;
-  width: 25%;
+  padding-top: 5%;
+    text-align: center;
+    height: 100%;
+    width: 25%;
 }
 .column2{
   height: 100%;
@@ -60,7 +63,7 @@ background:gainsboromar;
 }
 .imgType{
   font-size:20px;
-  height: 70px;
+  height: 85px;
 }
 .imgstat{
   font-size:20px;
@@ -113,7 +116,7 @@ background:gainsboromar;
 .botonimagen{
   background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlU-wNhiuXKk51Sc_3BiqZhcO5KmXSydudIw&usqp=CAU');
   background-repeat:no-repeat;
-  height:100px;
-  width:100px;
+  height: 80px;
+    width: 78px;
   background-position:center;
   border-radius:50% }
