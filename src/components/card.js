@@ -26,7 +26,7 @@ import GetTypes from './getTypes';
               <div class="column1 textStat">
               <div class="card-content white-text">
               <div class="textName">#{this.props.index+1}</div>
-              <div class="textName">{this.props.name}</div>
+              <div class="textName">{this.props.name.toLocaleUpperCase()}</div>
               </div> 
               </div>
               <div class="column2">
