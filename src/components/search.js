@@ -3,7 +3,7 @@ import React from 'react';
  class SearchSideBar extends React.Component{
     constructor(){
         super();
-        this.state = {value: ''};
+        this.state = {value:1};
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -31,7 +31,7 @@ import React from 'react';
                    
                 />
               <div>
-                  <button onClick={this.handleSubmit}>GO!</button>
+                  <button className="botonimagen2" onClick={this.handleSubmit}></button>
               </div>
                            </div>
             

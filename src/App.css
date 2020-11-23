@@ -5,10 +5,10 @@
   padding: 1em 2em;
 }
 .pagination-row2{
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  padding: 1em 2em;
+  margin-top: 30px;
+  width: 45%;
+    display: flex;
+    justify-content: center;
 }
 .pagination-row > .item{
   text-align: center;
@@ -132,7 +132,27 @@ background:gainsboromar;
     width: 78px;
   background-position:center;
   border-radius:50% }
+  .botonimagen2{
+    background-image:url('https://lh3.googleusercontent.com/proxy/MFHav3KpSxRSFYI_UgBIrMADkJzKVoOZcLyvzvcrqrVrYApVJafx85eUkVDhaRz0rXrDPpu6siB7JKNI5MX__-fKWbF79OSFfac_oaiW99skMyd3VIqzUTIMD4m9to7p8Cpq2pnlEsRMpvmCPNlu-gEcskmjxhJ-iTF76otWOkPvD6YQ_pni1RI')
+    ;height: 80px;
+      width: 78px;
+    background-position:center;
+    border-radius:50%;
+  margin-left: 10px; }
+  
   .inputSearch{
-    width: 210px;
-    height: 40px;
+    padding: 5px;
+    width: 310px;
+    height: 75px;
+    border-radius: 15px ;
   }
+.search-style{
+  
+  display: flex;
+  width: 70%;
+}
+input::placeholder {
+  color: black;
+  font-size: 1.5em;
+  font-style: italic;
+}
