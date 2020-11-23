@@ -2,6 +2,8 @@ import React from 'react';
 import './styles.css'
 
 import Modal from './modal';
+import GetTypes from './getTypes';
+
 
 
   export default class Card extends React.Component {
@@ -32,7 +34,14 @@ import Modal from './modal';
               </div>
               <div class="column3 black-text textStat">
               
-              <div> <Modal pokeInfo={this.props.pokeInfo} pokemones={this.props.pokemones} pokeType={this.props.pokeType} /></div>
+              <div>
+              <div className="titleBasic">BASE STATS</div>
+                 <Modal pokeInfo={this.props.pokeInfo} pokemones={this.props.pokemones} pokeType={this.props.pokeType} />
+             </div>
+             <div>
+             <GetTypes pokeType={this.props.pokeType}/>
+             </div>
+                 
               
               
           </div>

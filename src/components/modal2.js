@@ -3,7 +3,7 @@ import {Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Input, La
 import 'bootstrap/dist/css/bootstrap.css';
 import PokeInfo from './searchStats'
 
-class MODAL extends React.Component{
+class MODAL2 extends React.Component{
   state={
     abierto: false,
   }
@@ -46,4 +46,4 @@ class MODAL extends React.Component{
   }
 }
 
-export default MODAL;
+export default MODAL2;

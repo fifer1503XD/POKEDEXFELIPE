@@ -2,7 +2,7 @@
 import React from 'react';
 import './styles.css';
 import GetStats from './getStats';
-import GetTypes from './getTypes';
+
 export default class pokeInfo extends React.Component {
     constructor(props){
         super(props);
@@ -19,7 +19,7 @@ export default class pokeInfo extends React.Component {
        <div>
        
          <GetStats pokeInfo={this.props.pokeInfo}/>
-         <GetTypes pokeType={this.props.pokeType}/>
+         
           
         </div>
    )

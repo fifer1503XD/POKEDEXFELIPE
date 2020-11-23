@@ -50,6 +50,7 @@ background:gainsboromar;
   width: 35%;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 5%;
 }
 .textStat{
@@ -83,6 +84,7 @@ background:gainsboromar;
   color:black
 }
 .containerTypes{
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
@@ -91,6 +93,7 @@ background:gainsboromar;
   font-family: 'Monoton', cursive;
 }
 .titleBasic{
+  margin-top:20px;
   font-size:3.2em;
   font-family: 'Monoton', cursive;
   width: 100%;
@@ -107,3 +110,10 @@ background:gainsboromar;
   list-style: none;
   border-radius: 0.25rem;
 }
+.botonimagen{
+  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlU-wNhiuXKk51Sc_3BiqZhcO5KmXSydudIw&usqp=CAU');
+  background-repeat:no-repeat;
+  height:100px;
+  width:100px;
+  background-position:center;
+  border-radius:50% }
