@@ -1,10 +1,15 @@
 .pagination-row{
-  width: 500px;
+  width: 40%;
   display: flex;
   justify-content: center;
   padding: 1em 2em;
 }
-
+.pagination-row2{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  padding: 1em 2em;
+}
 .pagination-row > .item{
   text-align: center;
   background-color: rgb(234 49 49);;
@@ -58,7 +63,7 @@ background:gainsboromar;
   margin-top: 5%;
 }
 .textStat{
-  font-size:1.1em;
+  font-size:0.8em;
   font-weight: 600;
   
 }
@@ -114,6 +119,12 @@ background:gainsboromar;
   list-style: none;
   border-radius: 0.25rem;
 }
+.containerpagination{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
 .botonimagen{
   background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlU-wNhiuXKk51Sc_3BiqZhcO5KmXSydudIw&usqp=CAU');
   background-repeat:no-repeat;
@@ -121,3 +132,7 @@ background:gainsboromar;
     width: 78px;
   background-position:center;
   border-radius:50% }
+  .inputSearch{
+    width: 210px;
+    height: 40px;
+  }

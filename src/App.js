@@ -49,6 +49,7 @@ export default class App extends React.Component {
           .catch( error => {
             console.log(error);
           })
+          
   }
   
     fetchPage = (requestPage) => {
@@ -93,7 +94,7 @@ export default class App extends React.Component {
                   }
                   //2. Solucionar el problema de obtener las imagenes de los pokemones con id < 10, > 10, > 100      
                   
-                  let pokemonImg = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${(index>=9)&&(index<=99) ? ("0"+(index+1)):((index>99) ?((index+1)):("00"+(index+1)))}.png`
+                  let pokemonImg = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${(index+1>9)&&(index+1<100) ? ("0"+(index+1)):((index>98) ?((index+1)):("00"+(index+1)))}.png`
                   
                   return (
                     <Card key={index + 1} name={pokemon.name}

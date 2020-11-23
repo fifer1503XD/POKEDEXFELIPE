@@ -1,9 +1,15 @@
 import React from 'react';
+import SearchSideBar from './search';
 import './styles.css'
 function Pagination(props){
     let pages = JSON.parse(JSON.stringify(props.ShowPages));
   
     return (
+        <div className="containerpagination">
+        <div className="pagination-row2">
+        <SearchSideBar fns={props.fns} />
+        </div>
+        
         <div className="pagination-row ">
             {
                 pages.map( (element, index) => {
@@ -12,6 +18,7 @@ function Pagination(props){
                 })
             }
             
+        </div>
         </div>
     )
 }
