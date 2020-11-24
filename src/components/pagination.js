@@ -14,7 +14,7 @@ function Pagination(props){
             {
                 pages.map( (element, index) => {
                     index=pages[index]
-                    return <div className="item" onClick={() => props.fns(index+1)}>{index + 1}</div>;
+                    return <div className="item" key={index} onClick={() => props.fns(index+1)}>{index + 1}</div>;
                 })
             }
             

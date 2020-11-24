@@ -66,7 +66,6 @@ export default class GetTypes extends React.Component {
         if(type=='dark'){
             img="https://upload.wikimedia.org/wikipedia/commons/0/09/Pok%C3%A9mon_Dark_Type_Icon.svg" 
         }
-        console.log(img)
         return(img)
     }
         render(){
@@ -74,9 +73,9 @@ export default class GetTypes extends React.Component {
             return(
                 <div className="containerTypes">
                 <div className="titleBasic">TYPES</div>
-                  {this.props.pokeType.map(pokemon=>{
+                  {this.props.pokeType.map((pokemon,index)=>{
                       return(
-                      <div><img className="imgType" src={`${this.typeImg(pokemon.type.name)}`}></img></div>)
+                      <div><img className="imgType" key={index} src={`${this.typeImg(pokemon.type.name)}`}></img></div>)
                   })}
                    {/* {this.props.pokeType.map(pokemon=>{
                       return(

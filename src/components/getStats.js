@@ -59,9 +59,9 @@ export default class GetStats extends React.Component {
 
        <div className="containersstats">
        <div className="titleBasic">BASE STATS</div>
-         {this.props.pokeInfo.map(pokemon=>{
+         {this.props.pokeInfo.map((pokemon,index)=>{
              return(
-             <div className="containerstats"><img className="imgstat" src={`${this.typeImg(pokemon.stat.name)}`}></img>  {this.typestat(pokemon.stat.name)} : {pokemon.base_stat}</div>)
+             <div className="containerstats" key={index}><img className="imgstat" src={`${this.typeImg(pokemon.stat.name)}`}></img>  {this.typestat(pokemon.stat.name)} : {pokemon.base_stat}</div>)
          })}
           {/* {this.props.pokeType.map(pokemon=>{
              return(

@@ -23,16 +23,16 @@ import GetTypes from './getTypes';
         // </div> 
         <div class="row-card">
             <div class="card brown darken-2 row-card">
-              <div class="column1 textStat">
+              <div class="column1 textStat col-sm-12	col-md-12 ">
               <div class="card-content white-text">
               <div class="textName">#{this.props.index+1}</div>
               <div class="textName">{this.props.name.toLocaleUpperCase()}</div>
               </div> 
               </div>
-              <div class="column2">
+              <div class="column2 col-sm-12	col-md-12">
               <img className="imgPoke" src={this.props.img} alt={this.props.name}/>
               </div>
-              <div class="column3 black-text textStat">
+              <div class="column3 black-text textStat col-sm-12	col-md-12">
               
               <div>
               <div className="titleBasic">BASE STATS</div>
