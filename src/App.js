@@ -84,8 +84,8 @@ export default class App extends React.Component {
 
     render() {
         return (
-          <div className="pokedex-container cardcolor">
-            <div className="pokedex-container row">
+          
+            <div className="pokedex-container">
               {
                 
                 this.state.pokemones.map( (pokemon, index) => {  
@@ -103,21 +103,26 @@ export default class App extends React.Component {
                      pokeName={this.state.pokemones.name}
                      pokeInfo={this.state.pokeInfo}
                      pokeType={this.state.pokeType} 
-                     index={index}/>
+                     index={index}
+                     currentPage={this.state.currentPage} 
+            fetchPageFn={this.fetchPage} 
+            paginationShow={this.paginationShow} 
+            ShowPages={this.state.pagesShow}
+            fns={this.fns} />
                   )
                 })
               }
-               <div className="pgination">
+               
             <Pagination currentPage={this.state.currentPage} 
             fetchPageFn={this.fetchPage} 
             paginationShow={this.paginationShow} 
             ShowPages={this.state.pagesShow}
             fns={this.fns} />
             
+            
             </div>
-            </div>,
            
-            </div>
+            
         )
     }
 }

@@ -25,42 +25,41 @@
 }
 
 .row-card{
-  margin-left: 30px;
-    margin-right: 20px;
+  margin-left:2%;
   box-sizing: border-box;
-  width: 100%;
+  width: 96%;
   padding:1%;
   display: flex;
   flex-wrap: wrap;
   height: 80vh;
   border-radius: 40px;
- 
+ background:white;
 }
 .pokedex-container{
   display:flex;
   flex-wrap: wrap;
   width: 100%;
-background:gainsboromar;
+
 
 
 }
 .column1{
   padding-top: 5%;
     text-align: center;
-    height: 100%;
-    width: 30%;
+    /* height: 100%; */
+    width: 100%;
 }
 .column2{
-  height: 100%;
-  width: 35%;
+  /* height: 100%; */
+  width: 100%;
 }
 .column3{
-  height: 100%;
-  width: 35%;
+  /* height: 100%; */
+  width: 100%;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 5%;
+  
 }
 .textStat{
   font-size:0.8em;
@@ -124,6 +123,7 @@ background:gainsboromar;
   align-items: center;
   width: 100%;
   display: flex;
+  background:black
 }
 .botonimagen{
   background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlU-wNhiuXKk51Sc_3BiqZhcO5KmXSydudIw&usqp=CAU');
@@ -155,4 +155,13 @@ input::placeholder {
   color: black;
   font-size: 1.5em;
   font-style: italic;
+}
+.container-card{
+  display: block;
+  width: 100vw;
+  background: black;
+
+}
+.body{
+  background:black
 }

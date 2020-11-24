@@ -21,18 +21,18 @@ import GetTypes from './getTypes';
         //     <h2>{props.name}</h2>
         //     <img src={props.img} alt={props.name} 
         // </div> 
-        <div class="row-card">
-            <div class="card brown darken-2 row-card">
-              <div class="column1 textStat col-sm-12	col-md-12 ">
+        <div class="container-card">
+            <div class="row-card">
+              <div class="column1 textStat  col-md-4">
               <div class="card-content white-text">
               <div class="textName">#{this.props.index+1}</div>
               <div class="textName">{this.props.name.toLocaleUpperCase()}</div>
               </div> 
               </div>
-              <div class="column2 col-sm-12	col-md-12">
-              <img className="imgPoke" src={this.props.img} alt={this.props.name}/>
+              <div class="column2  col-md-4">
+              <img className="imgPoke col-md-12" src={this.props.img} alt={this.props.name}/>
               </div>
-              <div class="column3 black-text textStat col-sm-12	col-md-12">
+              <div class="column3 black-text textStat  col-md-4 ">
               
               <div>
               <div className="titleBasic">BASE STATS</div>
