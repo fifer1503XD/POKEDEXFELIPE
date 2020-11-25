@@ -17,11 +17,9 @@ export default class App extends React.Component {
             initPoke: 1,
            
         }
-        
     }
 
     componentDidMount() {
-     
         const limit = this.state.pokemonPerPage;
         const url = 'https://pokeapi.co/api/v2/pokemon';
         //Consumir la API de pokeapi

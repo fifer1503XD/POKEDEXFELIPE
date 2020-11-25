@@ -7,7 +7,9 @@ export default class GetTypes extends React.Component {
             pokeInfo:[1,2,3]
 
         }
+        
     }
+  
     typeImg=(type)=>{
         
         let img;

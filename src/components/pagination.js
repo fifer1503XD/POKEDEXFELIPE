@@ -6,11 +6,11 @@ function Pagination(props){
   
     return (
         <div className="containerpagination">
-        <div className="pagination-row2">
+        <div className="pagination-row2 col-md-5">
         <SearchSideBar fns={props.fns} />
         </div>
         
-        <div className="pagination-row ">
+        <div className="pagination-row col-md-4">
             {
                 pages.map( (element, index) => {
                     index=pages[index]

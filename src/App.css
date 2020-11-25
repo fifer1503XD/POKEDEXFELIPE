@@ -1,12 +1,12 @@
 .pagination-row{
-  width: 40%;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 1em 2em;
 }
 .pagination-row2{
-  margin-top: 30px;
-  width: 45%;
+  margin-top: 5px;
+  width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -16,7 +16,7 @@
   cursor: pointer;
   margin: 2px;
   width: 20%;
-  margin-top: 50px;
+  
   font-size:2em;
 }
 
@@ -25,6 +25,7 @@
 }
 
 .row-card{
+  margin-top:2%;
   margin-left:2%;
   box-sizing: border-box;
   width: 96%;
@@ -39,6 +40,7 @@
   display:flex;
   flex-wrap: wrap;
   width: 100%;
+  background:black;
 
 
 
@@ -69,6 +71,8 @@
 .imgType{
   font-size:20px;
   height: 85px;
+  border-radius:50%;
+  box-shadow: 10px 5px 5px black;
 }
 .imgstat{
   font-size:20px;
@@ -133,16 +137,16 @@
   background-position:center;
   border-radius:50% }
   .botonimagen2{
-    background-image:url('https://lh3.googleusercontent.com/proxy/vHzu7o6EEfBrHPI20t1AXx2HlvAQ2x4RfJAsHIhvAeVcnGj9Xv8ATX6Mg3O02DM8B1XPYYqZ31vgtV23pxapFJmWwRmYAkc8i81_WYSMmtaWr6PoQ1QTni0LQwJPNwmEGnLOcrxiHgRPnf0PM1tEDGlrZypP1Qa6P9ZNzIiLwT5f6Wfx9xL0ZAY')
-    ;height: 80px;
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlU-wNhiuXKk51Sc_3BiqZhcO5KmXSydudIw&usqp=CAU');
+    background-repeat:no-repeat;
+    height: 80px;
       width: 78px;
     background-position:center;
-    border-radius:50%;
-  margin-left: 10px; }
+    border-radius:50% }
   
   .inputSearch{
     padding: 5px;
-    width: 310px;
+    width: 320px;
     height: 75px;
     border-radius: 15px ;
   }
