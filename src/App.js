@@ -31,7 +31,7 @@ export default class App extends React.Component {
             .catch( error => {
               console.log(error);
             })
-            
+            this.fns(1)
     }
     fns=(index)=> {
       this.getInfo(index);

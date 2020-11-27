@@ -17,13 +17,14 @@ import GetTypes from './getTypes';
   
           
     render(){
+      console.log(this.props.pokeType[0].type.name)
     return (
         // <div className="card-container">
         //     <h2>{props.name}</h2>
         //     <img src={props.img} alt={props.name} 
         // </div> 
         <div class="container-card">
-            <div class="row-card">
+            <div class={`row-card  float-xl-left ${this.props.pokeType[0].type.name}`}>
               <div class={`column1 textStat  col-md-4 `}>
               <div class="card-content white-text">
               <div class="textName">#{this.props.index+1}</div>
