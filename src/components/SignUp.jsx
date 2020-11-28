@@ -53,14 +53,12 @@ export default function SignUp() {
   const handleEmail = (event) => {
     const text = event.target.value;
     setemail(text)
-    console.log(email)
-    console.log(typeof(email))
+  
 };
 const handlePassword = (event) => {
   const text = event.target.value;
   setpassword(text)
-  console.log(password)
-  console.log(typeof(password))
+  
 };
   const register = (event) => {
     event.preventDefault();
