@@ -69,8 +69,10 @@ const handlePassword = (event) => {
     auth
       .signInWithEmailAndPassword(`${email}`,`${password}`)
       .then((response) => {console.log(response);
-        props.setIsLogged(true);})
-      .catch((error) => console.log(error));
+        props.setIsLogged(true);
+      alert('iniciaste sesion')})
+      .catch((error) =>{ console.log(error);
+        alert(error.message)});
   };
 
   return (

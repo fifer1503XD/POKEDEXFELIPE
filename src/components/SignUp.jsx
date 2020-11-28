@@ -71,7 +71,8 @@ const handlePassword = (event) => {
           if(response)
             console.log(response);
         }
-    ).catch( error => console.log(error));
+    ).catch((error) =>{ console.log(error);
+      alert(error.message)});
   }
 
   return (
