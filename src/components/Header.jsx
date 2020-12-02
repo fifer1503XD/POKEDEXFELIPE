@@ -12,7 +12,7 @@ export default function Header() {
             <Link to="/registro">Registro</Link>
           </li>
           <li>
-            <Link to="/panel">Panel</Link>
+            <Link to="/panel">Pokedex</Link>
           </li>
         </ul>
       </nav>
