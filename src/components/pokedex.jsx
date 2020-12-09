@@ -87,7 +87,7 @@ export default class Pokedex extends React.Component {
     render() {
         return (
           
-            <div className="pokedex-container">
+            <>
               {
                 
                 this.state.pokemones.map( (pokemon, index) => {  
@@ -122,7 +122,7 @@ export default class Pokedex extends React.Component {
             fns={this.fns} />
             
             
-            </div>
+            </>
            
             
         )

@@ -26,16 +26,15 @@
 }
 
 .row-card{
-  margin-top: 4%;
-  margin-bottom: 1%;
+  margin-top:2%;
   margin-left: 2%;
   box-sizing: border-box;
   width: 96%;
   padding: 1%;
   display: flex;
   flex-wrap: wrap;
-  height: 65vh;
   border-radius: 40px;
+  height: 95%;
 }
 .pokedex-container{
   height: 90vh;
@@ -125,11 +124,14 @@
   border-radius: 0.25rem;
 }
 .containerpagination{
+  height: 30%;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   display: flex;
-  background:black
+  flex-wrap: wrap;
+  background: black;
+  box-sizing: border-box;
 }
 .secundario>button{
   background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlU-wNhiuXKk51Sc_3BiqZhcO5KmXSydudIw&usqp=CAU');
@@ -163,9 +165,12 @@ input::placeholder {
   font-style: italic;
 }
 .container-card{
+
+  padding-top: 1%;
   display: block;
   width: 100vw;
   background: black;
+  box-sizing: border-box;
 
 }
 .body{
@@ -256,6 +261,7 @@ background:rgb(2 255 232 / 80%);
     justify-content: center;
 }
 .navbarpoke{
+  width: 100vw;
   height: 10vh;
   position: relative;
     display: flex;
@@ -281,4 +287,14 @@ background:rgb(2 255 232 / 80%);
 .dropdown>button{
   color:black;
   background:red;
+}
+.ContainerPokedex{
+  background:black;
+  height: 90vh;
+  box-sizing: border-box
+}
+.media{
+  @media (min-width: 700px) { 
+    height: auto;
+    }
 }

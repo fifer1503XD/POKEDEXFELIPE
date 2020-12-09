@@ -91,7 +91,9 @@ function App() {
             <SignUp />
           </Route>
           <PrivateRoute path="/panel" logged={isLogged} user={user} signInGoogle={signInGoogle} signInFacebook={signInFacebook}>
+            <div className="ContainerPokedex">
             <Pokedex />
+            </div>
           </PrivateRoute>
         </Switch>
       </div>
