@@ -16,6 +16,7 @@
   cursor: pointer;
   margin: 2px;
   width: 20%;
+  border-radius:15px;
   
   font-size:2em;
 }
@@ -25,18 +26,19 @@
 }
 
 .row-card{
-  margin-top:2%;
-  margin-left:2%;
+  margin-top: 4%;
+  margin-bottom: 1%;
+  margin-left: 2%;
   box-sizing: border-box;
   width: 96%;
-  padding:1%;
+  padding: 1%;
   display: flex;
   flex-wrap: wrap;
-  height: 80vh;
+  height: 65vh;
   border-radius: 40px;
- background:white;
 }
 .pokedex-container{
+  height: 90vh;
   display:flex;
   flex-wrap: wrap;
   width: 100%;
@@ -129,7 +131,7 @@
   display: flex;
   background:black
 }
-.botonimagen{
+.secundario>button{
   background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlU-wNhiuXKk51Sc_3BiqZhcO5KmXSydudIw&usqp=CAU');
   background-repeat:no-repeat;
   height: 80px;
@@ -216,4 +218,67 @@ background:rgb(2 255 232 / 80%);
 }
 .fighting{
   background:rgb(214 201 108 / 80%)
+}
+.navbar{
+  display: flex;
+  width: 100vw;
+  height: 10%;
+  background:red;
+}
+.imgProfile{
+    width: 25%;
+}
+.column-buttons{
+  font-size: 20px;
+  color: white;
+  align-content: space-between;
+  display: flex;
+  width: 85%;
+  
+}
+.column-profile{
+  flex-wrap: wrap;
+  display: flex;
+  align-items: revert;
+  
+  width: 15%;
+}
+ 
+
+.ButtonNavBar{
+  padding-top: 1%;
+    justify-items: center;
+    width: calc(100%/3);
+    height: 40px;
+   
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.navbarpoke{
+  height: 10vh;
+  position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background: red;
+}
+.w100{
+  width: 100%;
+  display:flex;
+  list-style:none
+}
+.ButtonNavBar>a{
+  color:white;
+}
+.profileName{
+  font-size: 2em;
+  width: 60%;
+  margin-left: 3%;
+}
+.dropdown>button{
+  color:black;
+  background:red;
 }

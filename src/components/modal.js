@@ -24,7 +24,7 @@ class MODAL extends React.Component{
       <>
       <div className="principal">
         <div className="secundario">
-      <Button className="botonimagen" color="success" onClick={this.abrirModal}></Button>
+      <Button className="botonimagen" onClick={this.abrirModal}></Button>
 
       </div></div>
 

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useHistory} from 'react';
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -48,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SignIn(props) {
+  
   const classes = useStyles();
   const [email, setemail] = useState('');
   const [password, setpassword] = useState('');
@@ -62,13 +63,14 @@ const handlePassword = (event) => {
   setpassword(text)
 
 };
-  const login = (event) => {
+  const Login = (event) => {
     event.preventDefault();
     auth
       .signInWithEmailAndPassword(`${email}`,`${password}`)
       .then((response) => {console.log(response);
         props.setIsLogged(true);
-      alert('iniciaste sesion')})
+      alert('iniciaste sesion')
+      props.history.push('/panel');})
       .catch((error) =>{ console.log(error);
         alert(error.message)});
   };
@@ -83,7 +85,7 @@ const handlePassword = (event) => {
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
-        <form className={classes.form} noValidate onSubmit={login}>
+        <form className={classes.form} noValidate onSubmit={Login}>
           <TextField
             variant="outlined"
             margin="normal"

@@ -1,21 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
-export default function Header() {
+import MenuProfile from "./menuProfile";
+import Navbar from "./navbar";
+export default function Header(props) {
   return (
-    <header className="navbar-container">
-      <nav>
-        <ul className="navbar">
-          <li>
-            <Link to="/">Inicio</Link>
-          </li>
-          <li>
-            <Link to="/registro">Registro</Link>
-          </li>
-          <li>
-            <Link to="/panel">Pokedex</Link>
-          </li>
-        </ul>
-      </nav>
+    <>
+    <header className="navbarpoke">
+      <div class="column-buttons">
+        {props.logged ? <div/>:<Navbar/>}
+      </div>
+      <div className="column-profile">
+      {props.logged ? 
+      <MenuProfile 
+      imgProfile={props.imgProfile} 
+      nameProfile={props.nameProfile} 
+      logout={props.logout} 
+      logged={props.isLogged}/> : <div/>}
+      </div>
     </header>
+    </>
   );
 }

@@ -1,8 +1,9 @@
 import React, {useContext} from 'react';
 import './styles.css'
-
+import { TranslatorProvider, useTranslate } from "react-translate"
 import Modal from './modal';
 import GetTypes from './getTypes';
+import JapaneseName from './japaneseName';
 
 
 
@@ -29,6 +30,8 @@ import GetTypes from './getTypes';
               <div class="card-content white-text">
               <div class="textName">#{this.props.index+1}</div>
               <div class="textName">{this.props.name.toLocaleUpperCase()}</div>
+
+             
               </div> 
               </div>
               <div class="column2  col-md-4">
